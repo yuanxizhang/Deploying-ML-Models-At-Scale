@@ -1,5 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import mean, col
+from pyspark.dbutils import DBUtils
 import click
 
 spark = SparkSession.builder.master("local[8]").getOrCreate()
